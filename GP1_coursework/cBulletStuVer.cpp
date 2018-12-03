@@ -23,7 +23,7 @@ Update the sprite position
 
 void cBullet::update(double deltaTime)
 {
-	auto rads = PI / 180.0f * this->getSpriteRotAngle();
+	auto rads = PI / 180.0f * this->getSpriteRotAngle() + 80.1f;
 
 	FPoint direction = { 0.0f, 0.0f };
 	direction.X = (float)(cos(rads));
